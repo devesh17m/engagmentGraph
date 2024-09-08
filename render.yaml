@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: my-dash-app
+    name: engagementGraph
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn test_app:app
