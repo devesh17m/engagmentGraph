@@ -99,4 +99,8 @@ def create_interactive_post_graph(csv_file_path):
 app = create_interactive_post_graph('bangladeshislamichhatrashibir_cleaned.csv')
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    
+    import os
+    port = int(os.getenv('PORT', 8050))  # Default to 8050 if PORT is not set
+    app.run_server(host='0.0.0.0', port=port, debug=True)
+
