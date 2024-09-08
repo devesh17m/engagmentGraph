@@ -107,8 +107,8 @@ def create_interactive_post_graph(csv_file_path):
     
     return app
 
+# Create the app instance
+app = create_interactive_post_graph('bangladeshislamichhatrashibir_merged.csv')
+
 if __name__ == '__main__':
-    # Create the graph and run the app
-    app = create_interactive_post_graph('bangladeshislamichhatrashibir_merged.csv')
     app.run_server(debug=True)
-    
